@@ -1,0 +1,35 @@
+# Private source materials retained for the Drive archive only
+/*.ipynb
+/*.csv
+/*.pptx
+/catboost_info/
+/notebooks/catboost_info/
+/drive_upload/
+/scripts/
+
+# Local input data and generated prediction files
+/data/raw/*
+!/data/raw/.gitkeep
+/outputs/*
+!/outputs/.gitkeep
+
+# Secrets and local environments
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.db
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
