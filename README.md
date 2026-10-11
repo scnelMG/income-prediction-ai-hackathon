@@ -14,6 +14,15 @@
 
 원본 자료 전체는 로컬 `drive_upload/`의 제한된 Drive 업로드용 ZIP에 보관합니다. 데이터 재배포 권한과 개인정보 여부가 확인되기 전에는 GitHub에 추가하지 않습니다. 상세 기준은 [PUBLICATION_POLICY.md](PUBLICATION_POLICY.md)를 따릅니다.
 
+## 노트북 형식 검증
+
+```bash
+python -m pip install -r requirements-check.txt
+python scripts/validate_notebooks.py
+```
+
+CI는 두 노트북의 JSON·Jupyter 스키마를 검사하며, 누락된 셀 ID 등의 경고도 실패로 처리합니다. 비공개 원천 데이터를 사용하는 분석 셀은 실행하지 않으므로 모델 성능 재현 검증과는 구분됩니다.
+
 ## 실행 환경
 
 Python 3.9 이상 환경에서 아래를 설치합니다.

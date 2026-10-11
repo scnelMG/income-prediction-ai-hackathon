@@ -5,7 +5,8 @@
 /catboost_info/
 /notebooks/catboost_info/
 /drive_upload/
-/scripts/
+/scripts/*
+!/scripts/validate_notebooks.py
 
 # Local input data and generated prediction files
 /data/raw/*
